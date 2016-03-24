@@ -1,4 +1,5 @@
 nginx:
+    container_name: ss_nginx
     build: docker-images/nginx
     ports:
         - '80:80'
@@ -10,13 +11,15 @@ nginx:
     volumes_from:
         - php
 php:
+    container_name: ss_php
     build: docker-images/php/5.5-dev
     links:
         - 'mysql:mysql'
     volumes:
         # Ensure you have set this environment variable!
         - ${SS_ROOT_PATH}:/var/www
-'mysql':
+mysql:
+    container_name: ss_mysql
     image: mysql:5.6
     ports:
         - '3306:3306'
