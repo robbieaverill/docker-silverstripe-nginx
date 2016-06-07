@@ -7,7 +7,7 @@ mysql:
         MYSQL_ROOT_PASSWORD: pw
 phpfpm:
     container_name: ss_php
-    build: docker-images/php/5.5-dev
+    build: docker-images/php/5.6-dev
     links:
         - 'mysql:mysql'
     volumes:
@@ -23,5 +23,6 @@ nginx:
     links:
         - phpfpm
         - mysql
+        # - es
     volumes_from:
         - phpfpm

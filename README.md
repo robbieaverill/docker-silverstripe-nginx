@@ -3,7 +3,7 @@
 This is a [`docker-compose`](https://docs.docker.com/compose/) repository for a SilverStripe development environment running:
 
 * nginx:latest
-* PHP-FPM 5.5
+* PHP-FPM 5.6
 * MySQL 5.6
 
 ---
@@ -73,7 +73,7 @@ Contributions are welcome. I've pretty much just set this up with what I needed 
 
 - [ ] Add SSL configuration for nginx
 - [ ] Package repository together for the docker hub
-- [ ] Add XDebug to phpfpm image
+- [x] Add XDebug to phpfpm image
 
 ## Alternatives
 

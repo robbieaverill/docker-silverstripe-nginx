@@ -1,4 +1,4 @@
-FROM php:5.5-fpm
+FROM php:5.6-fpm
 
 # Install
 RUN buildDeps=" \
