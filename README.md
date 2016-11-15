@@ -38,7 +38,7 @@ If you don't care about the logs, you can run in detached mode:
 docker-compose up -d
 ```
 
-**Note:** if running in detached mode the logs will not be accessible as they are sent to `STDOUT`.
+You can still access the logs when running detached using the `docker logs [container_name]` command, e.g. `docker logs ss_nginx`.
 
 ## Using the containers
 
@@ -73,7 +73,7 @@ Contributions are welcome. I've pretty much just set this up with what I needed 
 
 - [ ] Add SSL configuration for nginx
 - [ ] Package repository together for the docker hub
-- [x] Add XDebug to phpfpm image
+- [ ] Add XDebug to phpfpm image
 
 ## Alternatives
 
